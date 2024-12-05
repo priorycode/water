@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="container">
+  <section class="container" id="chemistry">
     <div class="container-section1">
       <article>
         <h2>El Agua en Términos Químicos</h2>

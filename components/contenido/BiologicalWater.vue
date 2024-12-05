@@ -15,11 +15,11 @@
             <h3>Hidratación Vital</h3>
           </div>
           <div class="items">
-            <img src="@/assets/img/item2.png" />
+            <img src="@/assets/img/nutrientes.png" />
             <h3>Transporte de Nutrientes</h3>
           </div>
           <div class="items">
-            <img src="@/assets/img/item3.png" />
+            <img src="@/assets/img/temperatura.png" />
             <h3>Control térmico</h3>
           </div>
         </div>

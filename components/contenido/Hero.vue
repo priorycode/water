@@ -15,7 +15,9 @@
       <h1>Explora el Fascinante Mundo del Agua</h1>
       <p class="poppins-regular">Desde su composición química hasta su impacto en la evolución de las civilizaciones, el agua es la base de la vida y del progreso. Descubre su importancia desde diferentes perspectivas.</p>
       <div class="container-btn">
-        <v-btn rounded="xl" size="x-large" variant="outlined" block>Comienza a explorar</v-btn>
+        <a href="#chemistry">
+        <v-btn class="btn" rounded="xl" size="x-large" variant="outlined" block>Comienza a explorar</v-btn>
+        </a>
       </div>
     </article>
   </section>
@@ -75,5 +77,17 @@ p {
 
 .container-btn {
   width: fit-content;
+}
+.container-btn a{
+  text-decoration: none;
+  color: white;
+}
+.btn{
+  color: white;
+  transition: all .2s ease-in-out;
+}
+.btn:hover{
+  scale: 1.1;
+  background: #00ADED;
 }
 </style>

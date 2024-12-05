@@ -14,12 +14,13 @@ const toggleMenu = () => {
     <header class="header">
       <router-link to="/" class="logo" >
         <img src="@/public/gota_blue.svg" class="icon" />
-        <span>Water</span>
+        <span>water world</span>
       </router-link>
       <nav :class="['navbar', { open: menuOpen }]">
         <router-link to="/inicio">Contenido</router-link>
         <router-link to="/actividades">Actividades</router-link>
         <router-link to="/material">Material Complementario</router-link>
+        <router-link to="/inicio">Evaluacion</router-link>
         <router-link to="/creditos">Créditos</router-link>
       </nav>
       <div class="icon-bar" @click="toggleMenu">
@@ -47,7 +48,7 @@ const toggleMenu = () => {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 22px;
   transition: all .2s ease-in-out;
 }
 
@@ -56,7 +57,7 @@ const toggleMenu = () => {
 }
 
 .logo img {
-  height: 26px;
+  height: 32px;
   width: auto;
 }
 
@@ -66,10 +67,10 @@ const toggleMenu = () => {
 }
 
 .navbar a {
-  color: #485194;
+  color: #2c3e50;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   transition: all .2s ease-in-out;
 }
 
