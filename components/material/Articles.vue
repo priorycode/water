@@ -50,4 +50,12 @@ h2{
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .container-article{
+    padding: 30px 16px;
+  }
+  .articles{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
 </style>

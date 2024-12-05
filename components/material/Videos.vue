@@ -61,6 +61,7 @@ const openPopup = (videoId: string, title: string) => {
   padding: 50px 0;
 }
 
+
 h2 {
   margin-bottom: 30px;
 }
@@ -69,5 +70,13 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .container-videos {
+    padding: 30px 16px;
+  }
+ .videos{
+   grid-template-columns: repeat(1,1fr);
+ }
 }
 </style>

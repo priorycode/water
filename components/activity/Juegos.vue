@@ -22,7 +22,7 @@ import Card from "~/components/activity/Card.vue";
             buttonLink="https://wordwall.net/es/resource/19646717/el-ciclo-del-agua"
         />
       <Card
-          title="Juego: La Contaminación del Agua"
+          title="Juego: La Contaminación"
           subtitle="Conoce y aprende jugando"
           description="Explora cómo las actividades humanas afectan el agua en este divertido e interactivo juego. Aprende sobre las causas de la contaminación y cómo podemos contribuir a proteger este recurso vital."
           location="¡Únete al desafío y toma conciencia ambiental!"
@@ -60,12 +60,15 @@ import Card from "~/components/activity/Card.vue";
 .container-general{
   background: #E9F9FF;
 }
+
 .container{
   padding: 90px 0;
 }
+
 h2{
   text-align: center;
   margin-bottom: 30px;
+  text-align: left;
 }
   .container-juego{
 
@@ -74,4 +77,12 @@ h2{
     grid-template-columns:repeat(3,1fr);
     gap: 20px;
   }
+@media (max-width: 768px) {
+  .container{
+    padding: 30px 16px;
+  }
+  .container-juego{
+  grid-template-columns: repeat(1,1fr);
+  }
+}
 </style>

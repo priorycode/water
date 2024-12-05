@@ -65,6 +65,8 @@ h1 {
   line-height: 90px;
 }
 
+
+
 p {
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
   font-size: 18px;
@@ -73,6 +75,19 @@ p {
   line-height: normal;
   max-width: 800px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .container-hero {
+    padding: 10px 16px;
+  }
+  h1{
+    font-size: 38px;
+    line-height: 80px;
+  }
+  p{
+    font-size: 16px;
+  }
 }
 
 .container-btn {

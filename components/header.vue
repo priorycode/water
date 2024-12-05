@@ -7,21 +7,27 @@ const menuOpen = ref(false);
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
 };
+
+const closeMenu = () => {
+  if (menuOpen.value) {
+    menuOpen.value = false;
+  }
+};
 </script>
 
 <template>
-  <div class="container">
+  <div class="container" @click.self="closeMenu">
     <header class="header">
       <router-link to="/" class="logo" >
         <img src="@/public/gota_blue.svg" class="icon" />
         <span>water world</span>
       </router-link>
-      <nav :class="['navbar', { open: menuOpen }]">
-        <router-link to="/inicio">Contenido</router-link>
-        <router-link to="/activity">Actividades</router-link>
-        <router-link to="/material">Material Complementario</router-link>
-        <router-link to="/inicio">Evaluacion</router-link>
-        <router-link to="/creditos">Créditos</router-link>
+      <nav :class="['navbar', { open: menuOpen }]" @click.self="closeMenu" >
+        <router-link to="/inicio" @click.self="closeMenu">Contenido</router-link>
+        <router-link to="/activity" @click.self="closeMenu">Actividades</router-link>
+        <router-link to="/material" @click.self="closeMenu">Material Complementario</router-link>
+        <router-link to="/evaluacion" @click.self="closeMenu">Evaluacion</router-link>
+        <router-link to="/creditos" @click.self="closeMenu">Créditos</router-link>
       </nav>
       <div class="icon-bar" @click="toggleMenu">
         <MenuIcon v-if="!menuOpen" />
@@ -108,6 +114,7 @@ const toggleMenu = () => {
 
   .navbar.open {
     display: flex;
+    z-index: 20;
   }
   .navbar a {
     padding: 15px 0;

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" :width="width" :prepend-icon="icon">
+  <v-card class="mx-auto container-card"  :prepend-icon="icon">
     <!-- Título -->
     <template v-slot:title>
       <span class="font-weight-black">{{ title }}</span>
@@ -42,10 +42,6 @@ const props = defineProps({
     type: String,
     default: "", // Ícono opcional para prepend-icon
   },
-  width: {
-    type: String,
-    default: "400", // Ancho de la tarjeta
-  },
   articleLink: {
     type: String,
     default: "", // URL del enlace al artículo
@@ -56,5 +52,13 @@ const props = defineProps({
 <style scoped>
 .font-weight-black {
   font-weight: 900;
+}
+.container-card{
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .container-card{
+    width: auto;
+  }
 }
 </style>

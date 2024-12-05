@@ -83,4 +83,14 @@ h2 {
   justify-content: space-between;
   height: 100%; /* Asegura que todas las tarjetas ocupen el mismo espacio */
 }
+@media (max-width: 768px) {
+  h2{
+    font-size: 32px;
+    padding: 0 16px;
+  }
+
+  .container-cards{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
 </style>

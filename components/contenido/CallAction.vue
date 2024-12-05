@@ -55,4 +55,11 @@ h2{
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  h2{
+    font-size: 20px;
+    margin: 0 16px;
+  }
+}
 </style>

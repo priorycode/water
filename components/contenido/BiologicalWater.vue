@@ -79,4 +79,30 @@ p{
   height: 60px;
 }
 
+@media (max-width: 768px) {
+  .container-section1{
+    flex-direction: column;
+    gap: 30px;
+    padding: 35px 16px;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  h2{
+    font-size: 32px;
+  }
+  p{
+    font-size: 12px;
+  }
+
+  .items img{
+    width: 45px;
+    height: 45px;
+  }
+  .items h3 {
+    font-size: 12px;
+  }
+}
+
 </style>

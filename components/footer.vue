@@ -9,8 +9,9 @@
       <nav class="menu">
         <h3>Link de importancia</h3>
         <router-link to="/inicio" class="link">Contenido</router-link>
-        <router-link to="/actividades" class="link">Actividades</router-link>
+        <router-link to="/activity" class="link">Actividades</router-link>
         <router-link to="/material" class="link">Material Complementario</router-link>
+        <router-link to="/evaluacion" class="link">Evaluación</router-link>
         <router-link to="/creditos" class="link">Créditos</router-link>
       </nav>
     </section>
@@ -20,15 +21,19 @@
   </footer>
 </template>
 <style scoped>
-.footer {
 
-
-}
 .footer-container{
   padding: 78px 0;
   border-bottom: 1px solid #BDBDBD;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .footer-container{
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 16px;
+  }
 }
 .logo-container{
   max-width: 400px;

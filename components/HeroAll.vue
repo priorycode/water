@@ -51,6 +51,7 @@ const props = defineProps({
   align-items: center;
 }
 
+
 .container-title {
   max-width: 1000px;
   margin-bottom: 30px;
@@ -63,9 +64,23 @@ h1 {
   line-height: normal;
 }
 
+
+
 strong .link {
   color: white;
   transition: color 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .container-hero {
+    padding: 10px 16px;
+  }
+  h1{
+    font-size: 45px;
+  }
+  strong .link {
+    font-size: 14px;
+  }
 }
 
 strong .link:hover {
