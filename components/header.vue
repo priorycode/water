@@ -18,7 +18,7 @@ const toggleMenu = () => {
       </router-link>
       <nav :class="['navbar', { open: menuOpen }]">
         <router-link to="/inicio">Contenido</router-link>
-        <router-link to="/actividades">Actividades</router-link>
+        <router-link to="/activity">Actividades</router-link>
         <router-link to="/material">Material Complementario</router-link>
         <router-link to="/inicio">Evaluacion</router-link>
         <router-link to="/creditos">Créditos</router-link>
